@@ -1,4 +1,4 @@
-package main
+package linear_search
 
 import (
 	"errors"
@@ -14,7 +14,7 @@ func linear_search(arr []int, target int) (int, error) {
 	return -1, errors.New("not found")
 }
 
-func main() {
+func LinearS() {
 	arr := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 	ret, err := linear_search(arr, 11)
 	if err != nil {
